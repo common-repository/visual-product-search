@@ -1,0 +1,363 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Oct 27, 2018, 12:56:23 PM
+    Author     : Tahajjat
+    (c) 2019 - 2020 Accelx Inc.
+*/
+
+/*********** Global margin class ***********/
+.vs-margin-all-10{
+    margin: 10px;
+}
+.vs-margin-top-10{
+    margin-top: 10px;
+}
+.vs-margin-right-10{
+    margin-right:  10px;
+}
+.vs-margin-bottom-10{
+    margin-bottom: 10px;
+}
+.vs-margin-left-10{
+    margin-left:   10px;
+}
+
+.vs_attachments li{ float: left; margin-left: 5px;}
+
+
+/* START : VISUAL SEARCH ADMIN PAGE STYLE ====================================*/
+
+.vs-plugin-header{
+    background-color: #fff;
+    /*text-align: center;*/
+    box-shadow: 0 1px 0 rgba(200,215,225,0.5),0 1px 2px #e9eff3;
+}
+
+.vs-plugin-header h2 {
+    margin: 0;
+    padding: 10px;
+}
+
+.vs-btn-group {
+    margin-top: 14px;
+}
+
+.vs-btn-group a, .vs-linkbtn {
+    background: white;
+    border-color: #c8d7e1;
+    border-style: solid;
+    border-width: 1px 1px 2px;
+    color: #2e4453;
+    cursor: pointer;
+    display: inline-block;
+    margin: 0;
+    outline: 0;
+    overflow: hidden;
+    font-size: 14px;
+    font-weight: 500;
+    text-overflow: ellipsis;
+    text-decoration: none;
+    vertical-align: top;
+    box-sizing: border-box;
+    font-size: 14px;
+    line-height: 21px;
+    border-radius: 4px;
+    padding: 7px 14px 9px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+
+.vs-nav-tabs {
+    border-bottom: 0px solid #dee2e6;
+    float: right;
+}
+
+.vs-nav{
+    display: initial;
+}
+
+.vs-card {
+    max-width: 100% !important;
+    padding-top: 0px;
+    padding-bottom: 1px;
+}
+
+.vs-card-body{
+    padding: 0;
+}
+
+.vs-dboard-navtab{
+    border: 0px solid red;
+}
+
+.vs-dboard-navtab .vs-navlink{
+    font-weight: 400;
+}
+
+.vs-dboard-navtab .vs-dboard-navtab.show .vs-navlink, .vs-dboard-navtab .vs-navlink.active {
+    border-color: transparent;
+    background: #0062CC;
+    color: #fff;
+}
+
+.vs-dboard-navtab .vs-navlink {
+    border: 1px solid transparent;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+#vs-plugin-footer{
+    margin-top: 80px;
+}
+
+.vs-footernav{}
+.vs-footernav li{}
+.vs-footernav li a {
+    font-size: 13px;
+    color: darkgreen;
+}
+
+/*.vs-listgroup{
+    margin-bottom: 10px;
+}
+
+.vs-listgroup a{
+    background: #F3F6F8;
+}
+
+.vs-listgroup a:last-child {
+        border-bottom-right-radius: 0;
+        border-bottom-left-radius: 0;
+}
+
+.vs-listgroup a:first-child {
+        border-top-left-radius: 0;
+        border-top-right-radius: 0;
+}*/
+
+.vs-accordion-card{
+    padding: 0 0 0 0px;
+    border-radius: 0;
+}
+
+.vs-accordion-card .card-header a{
+    color: darkgreen;
+}
+
+.vs-devmodtitle{
+    padding-top: 50px;
+}
+
+.vs-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+
+.vs-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.vs-slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.vs-slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .vs-slider {
+    background-color: #2196F3;
+}
+
+input:focus + .vs-slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .vs-slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.vs-slider.round {
+    border-radius: 34px;
+}
+
+.vs-slider.round:before {
+    border-radius: 50%;
+}
+
+
+
+.vs-productshowtbl td, .vs-productshowtbl th {
+    padding: 7px;
+}
+
+.vs-productshowtbl td {
+    font-size: 13px;
+}
+
+.vs-productshowtbl th {
+    font-size: 14px;
+}
+
+.vs-upimgform{
+    padding: 20px 0px;
+}
+
+
+
+/* END : VISUAL SEARCH ADMIN PAGE STYLE ====================================*/
+
+
+
+/* Start : Loader CSS Starting ===============*/
+#cover-spin {
+    position:fixed;
+    width:100%;
+    left:0;right:0;top:0;bottom:0;
+    background-color: rgba(255,255,255,0.7);
+    z-index:9999;
+    display:none;
+}
+
+@-webkit-keyframes spin {
+    from {-webkit-transform:rotate(0deg);}
+    to {-webkit-transform:rotate(360deg);}
+}
+
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+}
+
+#cover-spin::after {
+    content:'';
+    display:block;
+    position:absolute;
+    left:48%;top:40%;
+    width:40px;height:40px;
+    border-style:solid;
+    border-color:black;
+    border-top-color:transparent;
+    border-width: 4px;
+    border-radius:50%;
+    -webkit-animation: spin .8s linear infinite;
+    animation: spin .8s linear infinite;
+}
+/* End : Loader CSS Starting ===============*/
+
+.vs-dash-l-padding15{
+    padding-left: 15px !important;
+}
+.vs-dash-r-padding15{
+    padding-right: 15px !important;
+}
+.vs-setting-t-padding10{
+    padding-top: 10px !important;
+}
+.vs-setting-b-padding10{
+    padding-bottom: 10px !important;
+}
+.vs-setting-r-padding0{
+    padding-right: 0 !important;
+}
+.vs-setting-l-padding2{
+    padding-left: 2px !important;
+}
+.vs-dash-m-bottom0{
+    margin-bottom: 0 !important;
+}
+.vs-setting-t-margin10{
+    margin-top: 10px !important;
+}
+.vs-setting-t-margin20{
+    margin-top: 20px !important;
+}
+.vs-setting-t-margin4rem{
+    margin-top: .4rem !important;
+}
+.vs-dash-ml-camera-icon{    
+    width:50px !important;
+    padding-top: 5px !important;
+}
+.vs-dash-ai-powered-container{
+
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+    text-align: center !important;
+}
+.vs-dash-t-b-padding10{
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
+}
+.vs-dash-t-b-padding5-10{
+    padding-top: 5px !important;
+    padding-bottom: 10px !important;
+}
+.vs-dash-ml-camera-icon-setting{    
+    width:58px !important;
+}
+.vs-setting-t-b-padding25rem{
+
+    padding-top: .25rem !important;
+    padding-bottom: .25rem !important;
+}
+.vs-setting-progress-h-m{
+    height: 30px !important;
+    margin-top: 10px !important;
+}
+.vs-dash-setting-display-none{
+    display: none !important;
+}
+.vs-setting-up-picture-opt{
+    width: 80px !important;
+    height: 60px !important;
+}
+.vs-setting-up-p-m-padding0-maring0{
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+    margin-top: 0 !important;
+}
+.vs-setting-up-p-h-o-bg-paddingmaring0{
+    padding-top: 10px !important;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+    max-height: 250px !important;
+    overflow-y: scroll !important;
+    background: #000 !important;
+}
+.vs-setting-up-front-color{
+    font-size: 10px !important;
+    color: #fff !important;
+}
+.vs-setting-env-dwn-lib-btn {
+    padding-top: .15rem !important;
+    padding-bottom: .15rem !important;
+}
